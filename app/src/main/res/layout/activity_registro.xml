@@ -37,6 +37,8 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="enviar"
+        android:ems="10"
+        android:background="@drawable/edittext_border"
         android:layout_gravity="center_horizontal"
         android:paddingLeft="15dip"
         android:paddingRight="15dip" />
@@ -49,7 +51,7 @@
         android:text="Ya tienes cuenta! Accede!"
         android:gravity="center"
         android:textSize="20dip"
-        android:textColor="#0b84aa"/>
+        android:textColor="#28aa0b"/>
 
     <TextView android:id="@+id/register_error"
         android:layout_width="fill_parent"
@@ -58,6 +60,6 @@
         android:layout_marginBottom="40dip"
         android:gravity="center"
         android:textSize="20dip"
-        android:textColor="#0b84aa"/>
+        android:textColor="#600e12"/>
 
 </LinearLayout>

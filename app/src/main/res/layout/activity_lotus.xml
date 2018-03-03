@@ -5,16 +5,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.sauceda.lotus.LOTUS"
     android:orientation="vertical"
-    android:layout_margin="20dp"
+    android:layout_margin="5dp"
+    android:background="@color/colorPrimary"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dip">
+    >
 
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:ems="20"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_border"
+            />
+    </android.support.design.widget.TextInputLayout>
 
-
-
-
-
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=" E mail"
+            android:ems="20"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_border"
+            />
+    </android.support.design.widget.TextInputLayout>
 
 
 
