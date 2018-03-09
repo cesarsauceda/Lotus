@@ -1,65 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:id="@+id/linear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.sauceda.lotus.Registro"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:padding="20dip"
-    android:orientation="vertical">>
+    tools:context="com.example.sauceda.lotus.LOTUS"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@color/colorPrimary"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=" Nombre"
+            android:ems="20"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_border"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtCorreo"
+            android:inputType="textEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=" E mail"
+            android:ems="20"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_border"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtPassword"
+            android:inputType="textEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=" Password"
+            android:ems="20"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_border"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtConfirmPassword"
+            android:inputType="textEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=" E mail"
+            android:ems="20"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_border"
+            />
+    </android.support.design.widget.TextInputLayout>
 
 
-    <EditText
-        android:id="@+id/txtUserName"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:hint="UserName"
-        android:inputType="text" />
-
-    <EditText
-        android:id="@+id/txtEmail"
-        android:layout_marginTop="15dip"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:hint="Email"
-        android:inputType="textEmailAddress" />
-
-    <EditText
-        android:id="@+id/txtPass"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:hint="Password" android:inputType="textPassword"
-        android:layout_marginTop="15dip"
-        android:layout_marginBottom="30dip" />
-
-
-    <Button android:id="@+id/btnRegister"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
-        android:text="enviar"
-        android:ems="10"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:background="@drawable/edittext_border"
-        android:layout_gravity="center_horizontal"
-        android:paddingLeft="15dip"
-        android:paddingRight="15dip" />
+        android:layout_marginLeft="106dp"
+        android:ems="10"
+        android:text="Registrar" />
 
-    <TextView android:id="@+id/link_to_login"
-        android:layout_width="fill_parent"
+    <TextView
+        android:id="@+id/txtAccede"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dip"
-        android:layout_marginBottom="40dip"
-        android:text="Ya tienes cuenta! Accede!"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
         android:gravity="center"
-        android:textSize="20dip"
-        android:textColor="#28aa0b"/>
-
-    <TextView android:id="@+id/register_error"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dip"
-        android:layout_marginBottom="40dip"
-        android:gravity="center"
-        android:textSize="20dip"
-        android:textColor="#600e12"/>
+        android:text="Ya estas registrado ¡Accede!"
+        android:textColor="#99ffffff" />
 
 </LinearLayout>
