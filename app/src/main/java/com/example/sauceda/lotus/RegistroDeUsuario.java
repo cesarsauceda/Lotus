@@ -24,8 +24,8 @@ public class RegistroDeUsuario extends AppCompatActivity {
         edtCorreo=findViewById(R.id.edtCorreo);
         edtPassword=findViewById(R.id.edtPassword);
         edtConPassword=findViewById(R.id.edtConfirmPassword);
-        txtAcceder=findViewById(R.id.txtAccede);
-        btnRegistrar=findViewById(R.id.btnRegistrar);
+        txtAcceder=findViewById(R.id.txtAccedeUsuario);
+        btnRegistrar=findViewById(R.id.btnRegistrarUsuario);
         linearLayout=findViewById(R.id.linear);
         String correo=edtCorreo.getText().toString();
 

@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.sauceda.lotus.LOTUS"
     android:orientation="vertical"
-    android:background="@color/colorPrimary"
+    android:background="@color/background_material_light"
     android:layout_margin="5dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -147,7 +147,7 @@
         android:layout_height="wrap_content">
         <EditText
             android:id="@+id/edtPassword"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Password"
@@ -178,7 +178,7 @@
 
         <Button
             android:layout_centerHorizontal="true"
-            android:id="@+id/btnRegistrar"
+            android:id="@+id/btnRegistrarPsicologo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_border"
@@ -186,11 +186,11 @@
             android:text="Registrar" />
 
         <TextView
-            android:id="@+id/txtAccede"
+            android:id="@+id/txtAccedePsicologo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/btnRegistrar"
+            android:layout_below="@+id/btnRegistrarPsicologo"
             android:gravity="center"
             android:text="Ya estas registrado ¡Accede!"
             android:textColor="#99ffffff"
