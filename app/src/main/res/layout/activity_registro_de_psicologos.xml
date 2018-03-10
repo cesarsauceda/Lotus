@@ -1,9 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:id="@+id/linear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sauceda.lotus.LOTUS"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_margin="5dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.sauceda.lotus.RegistroDePsicologos">
+    >
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.TextInputLayout
+        android:textColorHint="@color/colorLetras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:ems="20"
+            android:textColor="@color/colorLetras"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorLetras"
+        >
+
+        <EditText
+            android:id="@+id/edtApellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Apellido"
+            android:ems="20"
+            android:textColor="@color/colorLetras"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Sexo:"
+                android:textColor="@color/colorLetras"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbHombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:textColor="@color/colorLetras" />
+
+                <RadioButton
+                    android:id="@+id/rbMujer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="F"
+                    android:textColor="@color/colorLetras" />
+            </RadioGroup>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/colorLetras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+
+                    android:id="@+id/edtCedula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:hint="Cedula Profesional"
+                    android:inputType="textEmailAddress"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </RelativeLayout></LinearLayout>
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:textColorHint="@color/colorLetras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtFechaNacimiento"
+            android:inputType="datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de Nacimiento DD/MM/AA"
+            android:ems="20"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:textColorHint="@color/colorLetras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtCorreo"
+            android:inputType="textEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="E mail"
+            android:ems="20"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:textColorHint="@color/colorLetras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtPassword"
+            android:inputType="textEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:ems="20"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:textColorHint="@color/colorLetras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtConfirmPassword"
+            android:inputType="textEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:ems="20"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:text="Registrar" />
+
+        <TextView
+            android:id="@+id/txtAccede"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnRegistrar"
+            android:gravity="center"
+            android:text="Ya estas registrado ¡Accede!"
+            android:textColor="#99ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

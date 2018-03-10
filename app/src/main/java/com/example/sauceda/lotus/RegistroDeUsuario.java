@@ -27,17 +27,19 @@ public class RegistroDeUsuario extends AppCompatActivity {
         txtAcceder=findViewById(R.id.txtAccede);
         btnRegistrar=findViewById(R.id.btnRegistrar);
         linearLayout=findViewById(R.id.linear);
+        String correo=edtCorreo.getText().toString();
 
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String nombre=edtNombre.getText().toString();
-                String correo=edtCorreo.getText().toString();
                 String password=edtPassword.getText().toString();
                 String confipassword=edtConPassword.getText().toString();
 
+
+
                 if(password==confipassword) {
-                    Snackbar.make(linearLayout, "RegistroDeUsuario Completo", Snackbar.LENGTH_SHORT).show();
+                    Snackbar.make(linearLayout, "Registro De Usuario Completo", Snackbar.LENGTH_SHORT).show();
                     startActivity(new Intent(RegistroDeUsuario.this,LOTUS.class));
                 }else{
                     Snackbar.make(linearLayout,"Error en Contraseña",Snackbar.LENGTH_SHORT).show();
@@ -47,6 +49,8 @@ public class RegistroDeUsuario extends AppCompatActivity {
 
             }
         });
+
+
 
         txtAcceder.setOnClickListener(new View.OnClickListener() {
             @Override
