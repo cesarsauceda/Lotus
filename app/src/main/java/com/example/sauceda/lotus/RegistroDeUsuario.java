@@ -39,7 +39,7 @@ public class RegistroDeUsuario extends AppCompatActivity {
 
 
                 if(password==confipassword) {
-                    Snackbar.make(linearLayout, "Registro De Usuario Completo", Snackbar.LENGTH_SHORT).show();
+                    Snackbar.make(linearLayout, "Registro Usuario Completo", Snackbar.LENGTH_SHORT).show();
                     startActivity(new Intent(RegistroDeUsuario.this,LOTUS.class));
                 }else{
                     Snackbar.make(linearLayout,"Error en Contraseña",Snackbar.LENGTH_SHORT).show();
