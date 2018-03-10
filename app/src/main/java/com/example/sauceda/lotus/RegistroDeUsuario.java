@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Registro extends AppCompatActivity {
+public class RegistroDeUsuario extends AppCompatActivity {
     EditText edtNombre, edtCorreo, edtPassword, edtConPassword;
     TextView txtAcceder;
     LinearLayout linearLayout;
@@ -19,7 +19,7 @@ public class Registro extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registro);
+        setContentView(R.layout.activity_registro_de_usuario);
         edtNombre=findViewById(R.id.edtNombre);
         edtCorreo=findViewById(R.id.edtCorreo);
         edtPassword=findViewById(R.id.edtPassword);
@@ -37,8 +37,8 @@ public class Registro extends AppCompatActivity {
                 String confipassword=edtConPassword.getText().toString();
 
                 if(password==confipassword) {
-                    Snackbar.make(linearLayout, "Registro Completo", Snackbar.LENGTH_SHORT).show();
-                    startActivity(new Intent(Registro.this,LOTUS.class));
+                    Snackbar.make(linearLayout, "RegistroDeUsuario Completo", Snackbar.LENGTH_SHORT).show();
+                    startActivity(new Intent(RegistroDeUsuario.this,LOTUS.class));
                 }else{
                     Snackbar.make(linearLayout,"Error en Contraseña",Snackbar.LENGTH_SHORT).show();
                 }
@@ -51,7 +51,7 @@ public class Registro extends AppCompatActivity {
         txtAcceder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(Registro.this, "Se fue al Acceder", Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegistroDeUsuario.this, "Se fue al Acceder", Toast.LENGTH_SHORT).show();
             }
         });
     }

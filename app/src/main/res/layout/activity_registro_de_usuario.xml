@@ -6,14 +6,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.sauceda.lotus.LOTUS"
     android:orientation="vertical"
-    android:layout_margin="5dp"
-    android:background="@color/colorPrimary"
-
+    android:background="#9e00f9" android:layout_margin="5dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
 
     <android.support.design.widget.TextInputLayout
+        android:textColorHint="@color/colorLetras"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
@@ -22,15 +22,90 @@
             android:layout_height="wrap_content"
             android:hint=" Nombre"
             android:ems="20"
+            android:textColor="@color/colorLetras"
+
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:background="@drawable/edittext_border"
+
             />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorLetras"
+        >
+
+        <EditText
+            android:id="@+id/edtApellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=" Apellido"
+            android:ems="20"
+            android:textColor="@color/colorLetras"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <TextView
+            android:text="Sexo:"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorLetras"/>
+            <RadioGroup
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbHombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:textColor="@color/colorLetras"/>
+
+                <RadioButton
+                    android:id="@+id/rbMujer"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="F"
+                    android:textColor="@color/colorLetras"/>
+            </RadioGroup>
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:textColorHint="@color/colorLetras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtFechaNacimiento"
+            android:inputType="datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de Nacimiento"
+            android:ems="20"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:textColorHint="@color/colorLetras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
         <EditText
             android:id="@+id/edtCorreo"
             android:inputType="textEmailAddress"
@@ -40,11 +115,11 @@
             android:ems="20"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:background="@drawable/edittext_border"
             />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
+        android:textColorHint="@color/colorLetras"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
@@ -56,11 +131,11 @@
             android:ems="20"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:background="@drawable/edittext_border"
             />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
+        android:textColorHint="@color/colorLetras"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
@@ -72,7 +147,6 @@
             android:ems="20"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:background="@drawable/edittext_border"
             />
     </android.support.design.widget.TextInputLayout>
 
@@ -92,9 +166,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:textSize="20sp"
         android:gravity="center"
         android:text="Ya estas registrado ¡Accede!"
-        android:textColor="#99ffffff" />
+        android:textColor="#99ffffff"
+        android:textSize="20sp" />
 
 </LinearLayout>
