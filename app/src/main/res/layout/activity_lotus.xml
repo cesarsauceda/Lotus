@@ -9,23 +9,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-    <TextView
-        android:text="Registrate Aquí"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
     <TextView
-        android:layout_marginTop="20dp"
-        android:id="@+id/txtRegistroUsuario"
-        android:text="Usuario"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Registrate Aquí"
+        android:textAlignment="center"
+        android:textColor="@color/colorLetras"
+        android:textSize="24sp" />
+
     <TextView
-        android:layout_marginTop="20dp"
-        android:id="@+id/txtRegistroPsicologo"
-        android:text="Psicólogo"
+        android:id="@+id/txtRegistroUsuario"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Usuario"
+        android:textAlignment="center"
+        android:textColor="@color/colorLetras"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtRegistroPsicologo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Psicólogo"
+        android:textAlignment="center"
+        android:textColor="@color/colorLetras"
+        android:textSize="18sp" />
 
 
 
