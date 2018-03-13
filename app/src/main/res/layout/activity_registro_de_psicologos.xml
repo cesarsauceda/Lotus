@@ -22,7 +22,6 @@
             android:layout_height="wrap_content"
             android:hint="Nombre"
             android:ems="20"
-            android:textColor="@color/colorLetras"
             />
     </android.support.design.widget.TextInputLayout>
 
@@ -38,7 +37,6 @@
             android:layout_height="wrap_content"
             android:hint="Apellido"
             android:ems="20"
-            android:textColor="@color/colorLetras"
             />
     </android.support.design.widget.TextInputLayout>
 
@@ -162,7 +160,7 @@
         android:layout_height="wrap_content">
         <EditText
             android:id="@+id/edtConfirmPassword"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Confirm Password"
